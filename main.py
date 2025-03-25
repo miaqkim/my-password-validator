@@ -36,7 +36,7 @@ def check_password():
     # Check 3: At least one digit
     digit_exists = any(c.isdigit() for c in pw)
     if not digit_exists:
-        return flask.jsonify({"valid": False, "reason": "[assword must have at least 1 digit."}), 200
+        return flask.jsonify({"valid": False, "reason": "password must have at least 1 digit."}), 200
 
     # Check 4: At least one special character from !@#$%^&*
     special_chars = "!@#$%^&*"
